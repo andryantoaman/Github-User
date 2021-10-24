@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BackgroundLayout"
+    tools:context=".UserDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/BackgroundLayout"
+        android:paddingBottom="20dp">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/iv_avatar_detail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:siBorderColor="@android:color/darker_gray"
+        app:siBorderWidth="6dp"
+        tools:src="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tv_name_receive"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar_detail"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/tv_item_username_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Username      : "
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_receive" />
+
+    <TextView
+        android:id="@+id/tv_item_username_receive"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        tools:text="username"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_username_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_receive" />
+
+    <TextView
+        android:id="@+id/tv_item_follower_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Follower         : "
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_username_description" />
+
+    <TextView
+        android:id="@+id/tv_item_follower_receive"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        tools:text="follower"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_follower_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_username_receive"/>
+
+    <TextView
+        android:id="@+id/tv_item_following_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Following       : "
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_follower_description" />
+
+    <TextView
+        android:id="@+id/tv_item_following_receive"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        tools:text="Following"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_following_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_follower_receive"/>
+
+    <TextView
+        android:id="@+id/tv_item_company_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Company       : "
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_following_description" />
+
+    <TextView
+        android:id="@+id/tv_item_company_receive"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        tools:text="Company"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_company_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_following_receive"/>
+
+    <TextView
+        android:id="@+id/tv_item_location_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Location         : "
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_company_description" />
+
+    <TextView
+        android:id="@+id/tv_item_location_receive"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        tools:text="Location"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_location_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_company_receive"/>
+
+    <TextView
+        android:id="@+id/tv_item_repository_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Repository     : "
+        android:textColor="@android:color/secondary_text_dark_nodisable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_location_description" />
+
+    <TextView
+        android:id="@+id/tv_item_repository_receive"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        tools:text="Repository"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_repository_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_location_receive"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
